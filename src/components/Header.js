@@ -1,48 +1,48 @@
-import { SignedIn, SignedOut, UserButton, useClerk } from '@clerk/clerk-react'
-import '../styles/Header.css'
+import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/clerk-react";
+import "../styles/Header.css";
 
 function SignUpButton() {
-    const clerk = useClerk()
+  const clerk = useClerk();
 
-    return (
-        <button className="sign-up-btn" onClick={() => clerk.openSignUp({})}>
-            Sign up
-        </button>
-    )
+  return (
+    <button className="sign-up-btn" onClick={() => clerk.openSignUp({})}>
+      Sign up
+    </button>
+  );
 }
 
 function SignInButton() {
-    const clerk = useClerk()
+  const clerk = useClerk();
 
-    return (
-        <button className="sign-in-btn" onClick={() => clerk.openSignIn({})}>
-            Sign in
-        </button>
-    )
+  return (
+    <button className="sign-in-btn" onClick={() => clerk.openSignIn({})}>
+      Sign in
+    </button>
+  );
 }
 
 function Header() {
-    return (
-        <header>
-            <nav>
-                <SignedOut>
-                    <ul>
-                        <li>
-                            <SignUpButton />
-                        </li>
+  return (
+    <header>
+      <nav>
+        <SignedOut>
+          <ul>
+            <li>
+              <SignUpButton />
+            </li>
 
-                        <li>
-                            <SignInButton />
-                        </li>
-                    </ul>
-                </SignedOut>
+            <li>
+              <SignInButton />
+            </li>
+          </ul>
+        </SignedOut>
 
-                <SignedIn>
-                    <UserButton />
-                </SignedIn>
-            </nav>
-        </header>
-    )
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+      </nav>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
