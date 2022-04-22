@@ -2,9 +2,13 @@
 
 This repository shows how to use [Clerk](https://clerk.dev) with React.
 
-You can find its live demo at [https://starter.react.clerk.app](https://starter.react.clerk.app).
+---
 
-[![Open in VS Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/clerkinc/clerk-react-starter)
+**Clerk is Hiring!**
+
+Would you like to work on Open Source software and help maintain this repository? Apply today https://apply.workable.com/clerk-dev/.
+
+---
 
 ## Running the starter locally
 
