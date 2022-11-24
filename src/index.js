@@ -9,8 +9,8 @@ import NoMatch from "./components/NoMatch";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ClerkProvider frontendApi={process.env.REACT_APP_CLERK_FRONTEND_API}>
-      <BrowserRouter>
+    <ClerkProvider frontendApi={'clerk.normal.mammoth-76.lcl.dev'}>
+    <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<App />} />
