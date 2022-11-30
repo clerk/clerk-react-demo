@@ -7,10 +7,12 @@ import App from "./App";
 import Layout from "./components/Layout";
 import NoMatch from "./components/NoMatch";
 
+const frontendApi = process.env.REACT_APP_CLERK_FRONTEND_API;
+
 ReactDOM.render(
   <React.StrictMode>
-    <ClerkProvider frontendApi={'clerk.normal.mammoth-76.lcl.dev'}>
-    <BrowserRouter>
+    <ClerkProvider frontendApi={frontendApi}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<App />} />
