@@ -11,7 +11,7 @@ const publishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
 ReactDOM.render(
   <React.StrictMode>
-     <ClerkProvider publishableKey={clerkPubKey}>
+    <ClerkProvider publishableKey={publishableKey}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
