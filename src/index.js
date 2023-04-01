@@ -7,11 +7,11 @@ import App from "./App";
 import Layout from "./components/Layout";
 import NoMatch from "./components/NoMatch";
 
-const frontendApi = process.env.REACT_APP_CLERK_FRONTEND_API;
+const publishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
 ReactDOM.render(
   <React.StrictMode>
-    <ClerkProvider frontendApi={frontendApi}>
+     <ClerkProvider publishableKey={clerkPubKey}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
