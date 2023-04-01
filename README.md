@@ -7,7 +7,7 @@ This repository shows how to use [Clerk](https://clerk.dev?utm_source=github&utm
 1. Sign up for a Clerk account at https://clerk.dev
 2. Fork and/or clone this repository
 3. Install dependencies: `npm install`
-4. Add your "Frontend API" (found on [API Keys](https://dashboard.clerk.dev/last-active?path=/api-keys)) to a file called `.env.local`:
+4. Add your "Publishable Key" (found on [API Keys](https://dashboard.clerk.dev/last-active?path=/api-keys)) to a file called `.env.local`:
 
 ```sh
 echo "REACT_APP_CLERK_PUBLISHABLE_KEY=CLERK_PUBLISHABLE_KEY" >> .env.local
