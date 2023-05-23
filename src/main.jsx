@@ -1,15 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { ClerkProvider } from "@clerk/clerk-react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./styles/index.css";
 import App from "./App";
 import Layout from "./components/Layout";
 import NoMatch from "./components/NoMatch";
 
-const publishableKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
+import "./styles/index.css";
 
-ReactDOM.render(
+const publishableKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ClerkProvider publishableKey={publishableKey}>
       <BrowserRouter>
@@ -21,6 +22,5 @@ ReactDOM.render(
         </Routes>
       </BrowserRouter>
     </ClerkProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
