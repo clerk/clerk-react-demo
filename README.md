@@ -10,10 +10,10 @@ This repository shows how to use [Clerk](https://clerk.dev?utm_source=github&utm
 4. Add your "Publishable Key" (found on [API Keys](https://dashboard.clerk.dev/last-active?path=/api-keys)) to a file called `.env.local`:
 
 ```sh
-echo "REACT_APP_CLERK_PUBLISHABLE_KEY=CLERK_PUBLISHABLE_KEY" >> .env.local
+echo "VITE_CLERK_PUBLISHABLE_KEY=CLERK_PUBLISHABLE_KEY" >> .env.local
 ```
 
-5. Run the app: `npm start`
+5. Run the app: `npm run dev`
 
 ## Contact
 
