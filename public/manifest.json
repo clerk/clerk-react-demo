@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Clerk + React",
+  "name": "Clerk React Starter",
   "icons": [
     {
       "src": "favicon.ico",
