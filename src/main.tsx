@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-// Import the layouts
-import RootLayout from './layouts/root-layout';
-import DashboardLayout from './layouts/dashboard-layout';
+// Import the layout components
+import RootLayout from './layouts/root';
+import DashboardLayout from './layouts/dashboard';
 
-// Import the components
+// Import the route components
 import IndexPage from './routes';
 import ContactPage from './routes/contact';
 import SignInPage from './routes/sign-in';
 import SignUpPage from './routes/sign-up';
 import DashboardPage from './routes/dashboard';
-import InvoicesPage from './routes/dashboard.invoices';
+import InvoicesPage from './routes/invoices';
 
 const router = createBrowserRouter([
   {
