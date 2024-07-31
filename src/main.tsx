@@ -15,6 +15,7 @@ import SignUpPage from './routes/sign-up';
 import DashboardPage from './routes/dashboard';
 import InvoicesPage from './routes/invoices';
 
+// Loaders and Actions are NOT supported by Clerk at the moment with React Router
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
