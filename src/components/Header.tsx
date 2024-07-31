@@ -1,5 +1,5 @@
-import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/clerk-react";
-import "../styles/Header.css";
+import { SignedIn, SignedOut, UserButton, useClerk } from '@clerk/clerk-react';
+import '../styles/Header.css';
 
 function SignUpButton() {
   const clerk = useClerk();
